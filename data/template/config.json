@@ -18,7 +18,7 @@
     }
   ],
   "iconUrl": "https://imgur.com/tvlgIra.jpg",
-  "wordings": ["JavaScript, TypeScript, React", "Front-End Engineer"],
+  "wordings": ["Front-End Engineer"],
   "navbarList": [
     {
       "href": "/guestbook/",
@@ -27,6 +27,10 @@
     {
       "href": "/tags/",
       "title": "Tags"
+    },
+    {
+      "href": "/2019/12/12/about-Sliip831143/",
+      "title": "このブログについて"
     }
   ],
   "redirectors": [

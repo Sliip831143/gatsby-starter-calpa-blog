@@ -81,7 +81,7 @@ class BlogPost extends Component {
             か、
             <ExternalLink
               href="https://github.com/calpa/"
-              title="Githubをフォローして頂けると幸いです。"
+              title="Githubをフォローして頂けると幸いです"
             />
             。
           </div>
