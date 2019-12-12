@@ -40,7 +40,6 @@ const Sidebar = ({ totalCount, latestPosts }) => (
         <h4>Sliip831143</h4>
       </Link>
       <p className="mb-1">{wordings[0]}</p>
-      <p className="mb-3">{wordings[1]}</p>
       <Icon
         href={`https://twitter.com/${twitterUsername}`}
         icon={['fab', 'twitter']}
@@ -51,8 +50,7 @@ const Sidebar = ({ totalCount, latestPosts }) => (
       />
       <Icon href={`mailto:${email}`} icon={['far', 'envelope']} />
       {facebook
-        && <Icon href={`https://www.facebook.com/${facebook}/`} icon={['fab', 'facebook']} />
-      }
+        && <Icon href={`https://www.facebook.com/${facebook}/`} icon={['fab', 'facebook']} />}
       <Information totalCount={totalCount} posts={latestPosts} />
     </div>
   </header>
