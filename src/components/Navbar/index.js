@@ -33,8 +33,8 @@ const Navbar = () => (
           gotoPage('/');
         }}
       >
-        <span className="brand-logo">Calpa</span>
-        &apos;s Blog
+        <span className="brand-logo">Sliip831143</span>
+        &apos;のブログ
       </button>
       <button
         className="navbar-toggler"
@@ -44,7 +44,7 @@ const Navbar = () => (
       >
         <FontAwesomeIcon icon={faBars} />
       </button>
-      <GithubCorner url="https://github.com/calpa/gatsby-starter-calpa-blog" />
+      <GithubCorner url="https://github.com/Sliip831143/gatsby-starter-calpa-blog" />
       <div
         className="collapse navbar-collapse flex-row-reverse"
         id="navbarSupportedContent"
