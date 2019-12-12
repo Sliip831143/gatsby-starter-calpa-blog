@@ -43,7 +43,7 @@ const Sidebar = ({ totalCount, latestPosts }) => (
       <p className="mb-3">{wordings[1]}</p>
       <Icon
         href={`https://twitter.com/${twitterUsername}`}
-        icon={['fab', 'fa-twitter']}
+        icon={['fab', 'twitter']}
       />
       <Icon
         href={`https://github.com/${githubUsername}`}
