@@ -1,7 +1,7 @@
 {
   "url": "https://sliip831143.netlify.com/",
   "meta": {
-    "favicon": "https://i.imgur.com/PO9Y4fT.jpg",
+    "favicon": "https://imgur.com/2HaHvpy.jpg",
     "keyword": "sliip831143, blog, JavaScript",
     "description": "Sliip831143のブログ. 技術メモ, 日常など.",
     "theme_color": "#c60404"
@@ -9,6 +9,10 @@
   "name": "Sliip831143",
   "about": "/2019/12/12/about-Sliip831143/",
   "email": "sliip831143@gmail.com",
+  "status": {
+    "title": "Sliip831143のブログ",
+    "description": "Sliip831143のブログ. 技術メモ, 日常など."
+  },
   "title": "Sliip831143のブログ",
   "License": "by",
   "friends": [
@@ -20,10 +24,6 @@
   "iconUrl": "https://imgur.com/tvlgIra.jpg",
   "wordings": ["Front-End Engineer"],
   "navbarList": [
-    {
-      "href": "/guestbook/",
-      "title": "Guest Book"
-    },
     {
       "href": "/tags/",
       "title": "Tags"

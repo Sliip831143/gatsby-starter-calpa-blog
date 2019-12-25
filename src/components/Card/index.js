@@ -59,12 +59,12 @@ const Card = ({
 );
 
 Card.propTypes = {
-  title: PropTypes.string.isRequired,
+  // title: PropTypes.string.isRequired,
   date: PropTypes.string,
   url: PropTypes.string.isRequired,
   headerImage: PropTypes.string,
   headerBackgroundColor: PropTypes.string,
-  description: PropTypes.string.isRequired,
+  // description: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string),
 };
 

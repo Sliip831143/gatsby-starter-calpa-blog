@@ -34,7 +34,7 @@ const Navbar = () => (
         }}
       >
         <span className="brand-logo">Sliip831143</span>
-        のブログ
+        &nbsp;のブログ
       </button>
       <button
         className="navbar-toggler"
