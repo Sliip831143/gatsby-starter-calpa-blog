@@ -7,7 +7,6 @@ import { graphql } from 'gatsby';
 
 import { parseChineseDate } from '../api';
 
-import ExternalLink from '../components/ExternalLink';
 import Sidebar from '../components/Sidebar';
 import Content from '../components/Content';
 import SEO from '../components/SEO';
@@ -22,8 +21,6 @@ import { config } from '../../data';
 import './blog-post.scss';
 
 const { name, iconUrl } = config;
-
-const bgWhite = { padding: '10px 30px', background: 'white' };
 
 class BlogPost extends Component {
   constructor(props) {
@@ -54,20 +51,6 @@ class BlogPost extends Component {
         <Sidebar />
         <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-10 content">
           <Content post={html} />
-          <div className="m-message" style={bgWhite}>
-            この記事が役に立ったと思ったら、
-            <ExternalLink
-              href="https://github.com/calpa/gatsby-starter-calpa-blog"
-              title="このブログにスターをつける"
-            />
-            か、
-            <ExternalLink
-              href="https://github.com/calpa/"
-              title="Githubをフォローして頂けると幸いです"
-            />
-            。
-          </div>
-
         </div>
 
         <ShareBox url={slug} />

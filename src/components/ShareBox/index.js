@@ -9,11 +9,6 @@ import './index.scss';
 const CommentButton = () => (
   <a
     className="share-button"
-    style={{
-      lineHeight: '1.7rem',
-      color: '#337ab7',
-      paddingLeft: '0.15rem',
-    }}
     href="#gitalk-container"
     onClick={() =>
       ReactGA.event({
@@ -22,7 +17,7 @@ const CommentButton = () => (
       })
     }
   >
-    <FontAwesomeIcon icon={['far', 'comment']} />
+    <FontAwesomeIcon icon={['fab', 'twitter']} />
   </a>
 );
 
