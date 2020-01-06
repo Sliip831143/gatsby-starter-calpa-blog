@@ -7,7 +7,7 @@
     "theme_color": "#c60404"
   },
   "name": "Sliip831143",
-  "about": "/2019/12/12/about-Sliip831143/",
+  "about": "/2019-12-28-このブログについて/",
   "email": "sliip831143@gmail.com",
   "status": {
     "title": "Sliip831143のブログ",
@@ -29,13 +29,13 @@
       "title": "Tags"
     },
     {
-      "href": "/2019/12/12/about-Sliip831143/",
+      "href": "/2019-12-28-このブログについて/",
       "title": "このブログについて"
     }
   ],
   "redirectors": [
     {
-      "toPath": "/2019/12/12/about-Sliip831143/",
+      "toPath": "/2019-12-28-このブログについて/",
       "fromPath": "/about/"
     }
   ],
