@@ -15,8 +15,6 @@ templateKey: blog-post
 　入社時与えられた Windows PC が早くも不調を訴え出し、ようやく愛着が湧き始めた所だというのに呆気なく買い替えが決まってしまいました。いつその時が来ても良いよう、別途支給されていた MacBook の開発環境を整えにかかったのですが、リモートからローカルにプルしてパッケージまでインストールしたプロジェクトの gulp コマンドが転ける。
 
 　結局動かすのに半日を費やしてしまったので、戒めに踏んだエラーとその対処を時系列に並べて書き残しておきたいと思います。
-
-<br>
 <br>
 
 ## gulp / gulp-sass のバージョン
@@ -27,7 +25,6 @@ templateKey: blog-post
   "gulp": "^3.9.1",
   "gulp-sass": "^2.0.0",
 ```
-<br>
 <br>
 
 ## 事前準備
@@ -47,7 +44,7 @@ templateKey: blog-post
 ```
 gulp: command not found
 ```
-
+<br>
 
 #### 対処： Path を通す
 
@@ -56,7 +53,7 @@ gulp: command not found
 ```
 export PATH=$PATH:./node_modules/.bin
 ```
-
+<br>
 
 ### 2. primordials が未定義
 
@@ -69,7 +66,7 @@ const { Math, Object, Reflect } = primordials;
 
 ReferenceError: primordials is not defined
 ```
-
+<br>
 
 #### 対処： Node.js のバージョンを v11 系に切り替え
 
@@ -89,7 +86,7 @@ nodebrew install v11.15.0
 ```
 nodebrew use v11.15.0
 ```
-
+<br>
 
 ### 3. Error: Cannot find module 'gulp-sass'
 
@@ -108,7 +105,7 @@ Error: Cannot find module 'gulp-sass'
 ```
 npm ERR! missing: gulp-sass@^2.0.0, required by module@1.0.0
 ```
-
+<br>
 
 #### 対処： gulp-sass の再インストール
 
@@ -130,6 +127,7 @@ sudo npm cache clean --force
 ```
 npm i gulp-sass@2.0.0
 ```
+<br>
 
 　結果、gulp-sass のエラーが解消され、gulp コマンドが通るようになりました。良かったー。
 <br>
