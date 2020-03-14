@@ -29,8 +29,7 @@ templateKey: blog-post
 
 ## 事前準備
 
-　予め Homebrew 及び nodebrew、Yarn を導入しておきます。手順については割愛しますが、Yarn を Homebrew 経由で導入しないよう注意。Homebrew で Yarn を導入してしまうと、一緒に node を引き連れてきた挙句 Path を上書きしてしまう為、事実上 nodebrew による node のバージョン切り替えが利かなくなってしまいます（ハマった）。
-　Homebrew → nodebrew → npm で Yarn 導入と踏むのが吉。
+　予め Homebrew 及び nodebrew、Yarn を導入しておきます。手順については割愛しますが、Yarn を Homebrew 経由で導入しないよう注意。Homebrew で Yarn を導入してしまうと、一緒に node を引き連れてきた挙句 Path を上書きしてしまう為、事実上 nodebrew による node のバージョン切り替えが利かなくなってしまいます（ハマった）。Homebrew → nodebrew → npm で Yarn 導入と踏むのが吉。
 
 （参考：
 [最近流行りのyarnをインストールしたらハマった話](https://hisa-tech.site/yarn-install-stumble/)）
