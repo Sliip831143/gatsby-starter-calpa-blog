@@ -5,7 +5,7 @@ date: 2020-03-14T07:02:03.855Z
 description: リモートからプルしたプロジェクトの gulp が動かない対処メモ（macOS編）
 tags:
   - gulp.js
-headerImage: 'https://imgur.com/a/kBDi2j7'
+headerImage: 'https://imgur.com/56MGZrz'
 templateKey: blog-post
 ---
 ## gulp コマンドが通らない
