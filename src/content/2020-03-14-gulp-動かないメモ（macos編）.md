@@ -16,6 +16,7 @@ templateKey: blog-post
 
 　結局動かすのに半日を費やしてしまったので、戒めに踏んだエラーとその対処を時系列に並べて書き残しておきたいと思います。
 <br>
+<br>
 
 ## gulp / gulp-sass のバージョン
 ---
@@ -26,17 +27,21 @@ templateKey: blog-post
   "gulp-sass": "^2.0.0",
 ```
 <br>
+<br>
 
 ## 事前準備
-
+---
 　予め Homebrew 及び nodebrew、Yarn を導入しておきます。手順については割愛しますが、Yarn を Homebrew 経由で導入しないよう注意。Homebrew で Yarn を導入してしまうと、一緒に node を引き連れてきた挙句 Path を上書きしてしまう為、事実上 nodebrew による node のバージョン切り替えが利かなくなってしまいます（ハマった）。Homebrew → nodebrew → npm で Yarn 導入と踏むのが吉。
 
 （参考：
 [最近流行りのyarnをインストールしたらハマった話](https://hisa-tech.site/yarn-install-stumble/)）
 <br>
+<br>
 
+## エラーと対処
 ---
 ### 1. gulp: command not found
+<br>
 
 　gulp コマンドを実行したら下記エラーが出力され失敗。
 
@@ -46,6 +51,7 @@ gulp: command not found
 <br>
 
 #### 対処： Path を通す
+<br>
 
 　/Users/ [ ユーザー名 ] /.bash_profile（ファイルが存在しなければ新規作成）に下記 Path  を追記。
 
@@ -55,6 +61,7 @@ export PATH=$PATH:./node_modules/.bin
 <br>
 
 ### 2. primordials が未定義
+<br>
 
 　再度 gulp を実行するも下記エラーで失敗。
 
@@ -68,6 +75,7 @@ ReferenceError: primordials is not defined
 <br>
 
 #### 対処： Node.js のバージョンを v11 系に切り替え
+<br>
 
 　内部 API の変更により、node の v12 系 の上で gulp の v3 系は動かないとの事。 ```node -v``` で node のバージョンを確認した所、v12.31.1 と v12 系だった。
 これに対応するには gulp を v4 系にバージョンアップする必要があるが、「package-lock.json」で利用パッケージのバージョンを指定されている都合上そうもいかない。
@@ -88,6 +96,7 @@ nodebrew use v11.15.0
 <br>
 
 ### 3. Error: Cannot find module 'gulp-sass'
+<br>
 
 　三度 gulp を実行するも下記エラーで失敗。
 
@@ -107,6 +116,7 @@ npm ERR! missing: gulp-sass@^2.0.0, required by module@1.0.0
 <br>
 
 #### 対処： gulp-sass の再インストール
+<br>
 
 　gulp-sass をアンインストール
 
